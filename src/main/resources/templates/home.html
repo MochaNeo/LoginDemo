@@ -2,10 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
     <head>
         <title>Spring Security Example</title>
+        <link href="../static/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
+        <header>ヘッダーです</header> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 border border-dark">2</div>
+            <div class="col-md-2 border border-dark">2</div>
+            <div class="col-md-2 border border-dark">2</div>
+            <div class="col-md-6 border border-dark">6</div>
+        </div>
+    </div>
         <h1>Welcome!</h1>
-
-        <p>Click <a th:href="@{/hello}">here</a> to see a greeting.</p>
+        <p>ここはMochaNeoのTodoListアプリのサンプルページです。</p>
+        <p>ログインには以下のボタンを押下してください。</p>
+        <a th:href="@{/hello}" type="submit" class="btn btn-primary">Click here to see a greeting.</a>
+        
     </body>
 </html>

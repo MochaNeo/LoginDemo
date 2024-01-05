@@ -23,7 +23,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="/">TODOAPP</a>
+                <a class="navbar-brand" href="/">SampleApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -31,7 +31,6 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="/home#page-top">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/home#About">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +41,7 @@
             <div class="container">
                 <h1 th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</h1>
                 <form th:action="@{/logout}" method="post">
-                    <input type="submit" value="Sign Out"/>
+                    <input class="btn btn-xl btn-primary btn-block text-uppercase" type="submit" value="Sign Out"/>
                 </form>
             </div>
         </header>
@@ -53,7 +52,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; MochaNeo 2023</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://github.com/MochaNeo" aria-label="github"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>

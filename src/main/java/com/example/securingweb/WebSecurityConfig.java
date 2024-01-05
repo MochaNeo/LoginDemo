@@ -20,7 +20,7 @@ public class WebSecurityConfig {
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 		http
 			.authorizeHttpRequests((requests) -> requests
-				.requestMatchers("/css/styles.css", "assets/img/header-bg.jpg", "js/scripts.js").permitAll()
+				.requestMatchers("css/styles.css", "assets/img/header-bg.jpg", "js/scripts.js").permitAll()
 				.requestMatchers("/", "/home").permitAll()
 				.anyRequest().authenticated()
 			)

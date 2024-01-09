@@ -7,6 +7,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class MvcConfig implements WebMvcConfigurer {
 
+	//ビューコントローラーの設定を行うためのメソッド
+	//特定のurlにアクセスした時、どのurlを表示するか定義できる
+	//ビジネスロジックの処理は@Controllerクラスに委譲される
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/home").setViewName("home");
 		registry.addViewController("/").setViewName("home");
